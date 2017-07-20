@@ -1,7 +1,24 @@
 #!/usr/bin/env ruby
+require 'nanoc-conref-fs'
+require 'nanoc-html-pipeline'
+require 'nanoc-redirector'
+require 'extended-markdown-filter'
+require 'html/pipeline'
+require 'html/pipeline/rouge_filter'
+require 'page-toc-filter'
+
+
+preprocess do
+  @items.each do |item|
+    ConrefFS.apply_attributes(@config, item, :default)
+  end
+end
 
 compile '/**/*.html' do
-  layout '/default.*'
+  filter :'conref-fs-filter'
+  filter :erb
+  filter :html_pipeline, @config[:pipeline_config]
+  layout(item[:layout] ? "/#{item[:layout]}.*" : '/default.*')
 end
 
 # This is an example rule that matches Markdown (.md) files, and filters them
@@ -30,3 +47,9 @@ compile '/**/*' do
 end
 
 layout '/**/*', :erb
+
+postprocess do
+  @items.each do |item|
+    NanocRedirector::RedirectFrom.process(item, item.path)
+  end
+end

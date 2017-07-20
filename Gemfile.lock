@@ -44,6 +44,10 @@ GEM
     html-pipeline (2.5.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
+    html-pipeline-rouge_filter (1.0.5)
+      activesupport
+      html-pipeline (>= 1.11)
+      rouge (~> 2.0.7)
     i18n (0.8.6)
     json (1.8.6)
     liquid (3.0.6)
@@ -64,8 +68,12 @@ GEM
       nanoc (~> 4.3.0)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
+    page-toc-filter (0.1.0)
+      html-pipeline (~> 2.0)
+      nokogiri (~> 1.6.4)
     rake (10.3.2)
     ref (2.0.0)
+    rouge (2.0.7)
     thread_safe (0.3.6)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
@@ -75,7 +83,8 @@ PLATFORMS
 
 DEPENDENCIES
   docs-builder!
-  rake (~> 10.3.2)
+  html-pipeline-rouge_filter
+  page-toc-filter
 
 RUBY VERSION
    ruby 2.2.3p173

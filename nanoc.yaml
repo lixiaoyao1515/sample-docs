@@ -1,3 +1,37 @@
+pipeline_config:
+  pipeline:
+    - :ExtendedMarkdownFilter
+    - :HTTPSFilter
+    - :TableOfContentsFilter
+    - :RougeFilter
+    - :EmojiFilter
+    - :PageTocFilter
+  gfm: false
+  http_url: https://github.com
+  base_url: /
+  asset_root: https://a248.e.akamai.net/assets.github.com/images/icons
+
+
+data_variables:
+  -
+    scope:
+      path: ""
+    values:
+      version: "dotcom"
+
+page_variables:
+  -
+    scope:
+      path: ""
+    values:
+      page_version: 'test build'
+  -
+    scope:
+      path: 'test-data'
+    values:
+      page_version: 'test association'
+      data_association: "categories.simple"
+
 # The syntax to use for patterns in the Rules file. Can be either `"glob"`
 # (default) or `"legacy"`. The former will enable glob patterns, which behave
 # like Ruby’s File.fnmatch. The latter will enable Nanoc 3.x-style patterns.
@@ -41,7 +75,10 @@ prune:
 data_sources:
   -
     # The type is the identifier of the data source.
-    type: filesystem
+    type: conref-fs
+
+    reps:
+      - :default
 
     # The path where items should be mounted (comparable to mount points in
     # Unix-like systems). This is “/” by default, meaning that items will have
@@ -62,6 +99,8 @@ data_sources:
     # “full”, meaning that identifiers include file extensions. This can also
     # be “legacy”, primarily used by older Nanoc sites.
     identifier_type: full
+
+
 
 # Configuration for the “check” command, which run unit tests on the site.
 checks:
@@ -88,3 +127,7 @@ checks:
     # E.g.:
     #   exclude_files: ['blog/page']
     exclude_files: []
+
+docsbuilder:
+  datadog:
+    tags: ['Sample Site']
