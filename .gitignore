@@ -1,0 +1,16 @@
+/.bundle/
+/bin
+/vendor/ruby
+/vendor/gems/
+/vendor/cache/ruby/
+/vendor/bundle/
+/node_modules/
+
+output
+tmp
+.DS_Store
+.bundle
+crash.log
+npm-debug.log
+build.txt
+json-dump

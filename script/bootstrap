@@ -1,0 +1,30 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+if [ "$(uname -s)" = "Darwin" ]; then
+  brew update >/dev/null
+  brew bundle check &>/dev/null || brew bundle
+
+  brew bootstrap-rbenv-ruby
+  brew bootstrap-nodenv-node
+
+  BUNDLE="brew bundle exec -- bundle"
+  npm="brew bundle exec -- npm"
+else
+  BUNDLE="bundle"
+
+  export PATH="/usr/local/share/nodenv/shims:$PATH"
+  npm="npm"
+fi
+
+gems_path=vendor/cache
+bundle check --path ${gems_path} 2>&1 > /dev/null || {
+  echo "==> Installing gem dependencies…"
+  $BUNDLE install --path ${gems_path} --binstubs bin --local
+}
+
+$npm install
+$npm rebuild node-sass

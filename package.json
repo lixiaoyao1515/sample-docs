@@ -1,0 +1,27 @@
+{
+  "name": "sample-docs",
+  "version": "1.0.0",
+  "description": "## Goals 1. Create a simple content site that can be used to test essential features of docsotron. 1. Add enough complexity to represent all the features of a docs site while keeping things small, well explained, and clean. 1. Show best practices. 1. During transition to the new system allow this site to be build both as a nanoc/nanoc-conref-fs site and a docsotron site so we have a point of truth.",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/sample-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github/sample-docs/issues"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "app-module-path": "^2.2.0",
+    "docs-builder-npm": "git+ssh://git@github.com/github/docs-builder.git"
+  },
+  "homepage": "https://github.com/github/sample-docs#readme"
+}
