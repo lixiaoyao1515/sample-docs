@@ -6,3 +6,8 @@
 1. Show best practices.
 1. During transition to the new system allow this site to be build both as a nanoc/nanoc-conref-fs site and a docsotron site so we have a point of truth.
 
+## Getting going
+
+1. run `script/bootstrap`
+1. run `script/server`
+1. Hope for the best.
