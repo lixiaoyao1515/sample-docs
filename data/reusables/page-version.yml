@@ -1,0 +1,5 @@
+{% if page.version == '2.10' %}
+var: 'latest version 2.10'
+{% else %}
+var: 'prior version'
+{% endif %}

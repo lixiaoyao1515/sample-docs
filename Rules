@@ -14,6 +14,14 @@ preprocess do
   end
 end
 
+compile '/rules/layout1.html' do
+  filter :'conref-fs-filter'
+  filter :erb
+  filter :html_pipeline, @config[:pipeline_config]
+  layout('/layout1.*')
+end
+
+
 compile '/**/*.html' do
   filter :'conref-fs-filter'
   filter :erb

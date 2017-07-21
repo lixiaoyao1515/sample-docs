@@ -11,6 +11,13 @@ pipeline_config:
   base_url: /
   asset_root: https://a248.e.akamai.net/assets.github.com/images/icons
 
+versions:
+  - &latest_enterprise_version '2.10'
+  - '2.9'
+  - '2.8'
+  - '2.7'
+
+latest_enterprise_version: '2.10'
 
 data_variables:
   -
@@ -18,6 +25,11 @@ data_variables:
       path: ""
     values:
       version: "dotcom"
+  -
+    scope:
+      path: 'page-version'
+    values:
+      version: *latest_enterprise_version
 
 page_variables:
   -
@@ -31,6 +43,12 @@ page_variables:
     values:
       page_version: 'test association'
       data_association: "categories.simple"
+  -
+    scope:
+      path: 'page-vars'
+    values:
+      page_var: 'This is a page var'
+
 
 # The syntax to use for patterns in the Rules file. Can be either `"glob"`
 # (default) or `"legacy"`. The former will enable glob patterns, which behave
