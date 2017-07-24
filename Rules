@@ -56,8 +56,16 @@ end
 
 layout '/**/*', :erb
 
+REPS = [:default]
 postprocess do
-  @items.each do |item|
-    NanocRedirector::RedirectFrom.process(item, item.path)
+  REPS.each do |rep|
+    @items.each do |item|
+      begin
+        NanocRedirector::RedirectFrom.process(item, item.path(rep: rep))
+      rescue Nanoc::ItemRepCollectionView::NoSuchItemRepError
+        # probably /desktop, which has just one rep
+        next
+      end
+    end
   end
 end
