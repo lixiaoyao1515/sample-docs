@@ -30,6 +30,11 @@ data_variables:
       path: 'page-version'
     values:
       version: *latest_enterprise_version
+  -
+    scope:
+        path: 'pagevar'
+    values:
+      version: *latest_enterprise_version
 
 page_variables:
   -
@@ -48,6 +53,11 @@ page_variables:
       path: 'page-vars'
     values:
       page_var: 'This is a page var'
+  -
+    scope:
+      path: 'assoc-v'
+    values:
+      data_association: "categories.pagevar"
 
 
 # The syntax to use for patterns in the Rules file. Can be either `"glob"`

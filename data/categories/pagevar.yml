@@ -1,0 +1,7 @@
+- Association example:
+  {% if page.version == "2.10" %}
+  - 2.10 Page Link
+  {% else %}
+  - Older Page Link
+  {% endif %}
+

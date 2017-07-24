@@ -1,7 +1,14 @@
-example_id                                            | status | run_time        |
------------------------------------------------------ | ------ | --------------- |
-./spec/pages/rendering_examples/emoji_spec.rb[1:1]    | passed | 0.01212 seconds |
-./spec/pages/rendering_examples/markdown_spec.rb[1:1] | passed | 0.00194 seconds |
-./spec/pages/rendering_examples/markdown_spec.rb[1:2] | passed | 0.01695 seconds |
-./spec/pages/rendering_examples/rouge_spec.rb[1:1]    | passed | 0.0013 seconds  |
-./spec/pages/rendering_examples/toc_spec.rb[1:1]      | passed | 0.00124 seconds |
+example_id                                            | status  | run_time        |
+----------------------------------------------------- | ------- | --------------- |
+./spec/pages/conref/data_associations_spec.rb[1:1]    | passed  | 0.00096 seconds |
+./spec/pages/conref/data_associations_spec.rb[1:2:1]  | passed  | 0.00141 seconds |
+./spec/pages/conref/data_associations_spec.rb[1:2:2]  | pending | 0.00194 seconds |
+./spec/pages/conref/pagevars_spec.rb[1:1]             | passed  | 0.00091 seconds |
+./spec/pages/conref/reusable_spec.rb[1:1:1]           | passed  | 0.001 seconds   |
+./spec/pages/conref/reusable_spec.rb[1:2:1]           | passed  | 0.0009 seconds  |
+./spec/pages/conref/reusable_spec.rb[1:2:2]           | pending | 0.01431 seconds |
+./spec/pages/rendering_examples/emoji_spec.rb[1:1]    | passed  | 0.00119 seconds |
+./spec/pages/rendering_examples/markdown_spec.rb[1:1] | passed  | 0.00136 seconds |
+./spec/pages/rendering_examples/markdown_spec.rb[1:2] | passed  | 0.01121 seconds |
+./spec/pages/rendering_examples/rouge_spec.rb[1:1]    | passed  | 0.00984 seconds |
+./spec/pages/rendering_examples/toc_spec.rb[1:1]      | passed  | 0.00113 seconds |
