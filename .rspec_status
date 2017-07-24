@@ -1,0 +1,7 @@
+example_id                                            | status | run_time        |
+----------------------------------------------------- | ------ | --------------- |
+./spec/pages/rendering_examples/emoji_spec.rb[1:1]    | passed | 0.01212 seconds |
+./spec/pages/rendering_examples/markdown_spec.rb[1:1] | passed | 0.00194 seconds |
+./spec/pages/rendering_examples/markdown_spec.rb[1:2] | passed | 0.01695 seconds |
+./spec/pages/rendering_examples/rouge_spec.rb[1:1]    | passed | 0.0013 seconds  |
+./spec/pages/rendering_examples/toc_spec.rb[1:1]      | passed | 0.00124 seconds |

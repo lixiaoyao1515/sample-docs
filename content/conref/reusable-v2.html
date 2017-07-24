@@ -1,2 +1,5 @@
-<p>The below output would ideally be 'prior version'. This cannot not be done with Nanoc on its own, hubot is used to do this. A label is added to a pr and that changes the latest version in the nanoc.yml file to change the shown version.</p>
 <p class="reusable">{{ site.data.reusables.page-version.var }}</p>
+
+<p>The above output would ideally be 'prior version'. This cannot not be done with Nanoc on its own, hubot is used to do this. A label is added to a pr and that changes the latest version in the nanoc.yml file to change the shown version.</p>
+
+<p>Chances are this would also be at a different url, hubot is responsible for building the different versions of the site, this is done again with the pr label. Once a version of a site is created, hubot moves the relevant pages into the correct directory structure to represent the url structure the site uses. So for example, this page could be at `/enterprise/2.7/reusable-v1.html`, `/enterprise/2.8/reusable-v1.html`,  `/enterprise/2.9/reusable-v1.html`, etc... This information is not available to us because it is lost in the PR's. </p>
