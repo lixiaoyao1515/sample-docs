@@ -1,0 +1,9 @@
+---
+title: Top Category
+---
+<p>Association: <%= @item[:data_association] %></p>
+<p>Rep: <%= @rep.name %></p>
+
+<%= generate_guide_toc(@item, @rep.name) %>
+
+<p>This pulls in a data association and uses the generate guide function from the layouts helper. I am not sure how to change the rep, but that would change the generated table of contents.</p>

@@ -58,6 +58,22 @@ page_variables:
       path: 'assoc-v'
     values:
       data_association: "categories.pagevar"
+  -
+    scope:
+      path: "assoc-rep1"
+      reps:
+        - :default
+        - :cloud
+    values:
+      data_association: 'assoc_reps.categories'
+  -
+    scope:
+      path: "assoc-rep2"
+      reps:
+        - :default
+        - :cloud
+    values:
+      data_association: 'assoc_reps.categories'
 
 
 # The syntax to use for patterns in the Rules file. Can be either `"glob"`
