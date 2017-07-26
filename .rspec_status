@@ -1,19 +1,19 @@
 example_id                                            | status  | run_time        |
 ----------------------------------------------------- | ------- | --------------- |
-./spec/pages/conref/admin/assoc-reps_spec.rb[1:1]     | passed  | 0.00193 seconds |
-./spec/pages/conref/admin/assoc-reps_spec.rb[1:2]     | pending | 0.00199 seconds |
-./spec/pages/conref/data_associations_spec.rb[1:1]    | passed  | 0.0108 seconds  |
-./spec/pages/conref/data_associations_spec.rb[1:2:1]  | passed  | 0.00131 seconds |
-./spec/pages/conref/data_associations_spec.rb[1:2:2]  | pending | 0.025 seconds   |
-./spec/pages/conref/pagevars_spec.rb[1:1]             | passed  | 0.00124 seconds |
-./spec/pages/conref/reusable_spec.rb[1:1:1]           | passed  | 0.00175 seconds |
-./spec/pages/conref/reusable_spec.rb[1:2:1]           | passed  | 0.00128 seconds |
-./spec/pages/conref/reusable_spec.rb[1:2:2]           | pending | 0.00213 seconds |
-./spec/pages/lib/helpers_spec.rb[1:1]                 | passed  | 0.0028 seconds  |
-./spec/pages/rendering_examples/emoji_spec.rb[1:1]    | passed  | 0.00099 seconds |
+./spec/pages/conref/admin/assoc-reps_spec.rb[1:1]     | passed  | 0.00143 seconds |
+./spec/pages/conref/admin/assoc-reps_spec.rb[1:2]     | pending | 0.00291 seconds |
+./spec/pages/conref/data_associations_spec.rb[1:1]    | passed  | 0.01107 seconds |
+./spec/pages/conref/data_associations_spec.rb[1:2:1]  | passed  | 0.00216 seconds |
+./spec/pages/conref/data_associations_spec.rb[1:2:2]  | pending | 0.02383 seconds |
+./spec/pages/conref/pagevars_spec.rb[1:1]             | passed  | 0.00144 seconds |
+./spec/pages/conref/reusable_spec.rb[1:1:1]           | passed  | 0.00148 seconds |
+./spec/pages/conref/reusable_spec.rb[1:2:1]           | passed  | 0.00141 seconds |
+./spec/pages/conref/reusable_spec.rb[1:2:2]           | pending | 0.00231 seconds |
+./spec/pages/lib/helpers_spec.rb[1:1]                 | passed  | 0.00323 seconds |
+./spec/pages/rendering_examples/emoji_spec.rb[1:1]    | passed  | 0.00133 seconds |
 ./spec/pages/rendering_examples/markdown_spec.rb[1:1] | passed  | 0.00139 seconds |
-./spec/pages/rendering_examples/markdown_spec.rb[1:2] | passed  | 0.00869 seconds |
-./spec/pages/rendering_examples/rouge_spec.rb[1:1]    | passed  | 0.00174 seconds |
-./spec/pages/rendering_examples/toc_spec.rb[1:1]      | passed  | 0.00113 seconds |
-./spec/pages/rules/layout_spec.rb[1:1]                | passed  | 0.00555 seconds |
-./spec/pages/rules/redirect_spec.rb[1:1]              | pending | 0.00173 seconds |
+./spec/pages/rendering_examples/markdown_spec.rb[1:2] | passed  | 0.00675 seconds |
+./spec/pages/rendering_examples/rouge_spec.rb[1:1]    | passed  | 0.00131 seconds |
+./spec/pages/rendering_examples/toc_spec.rb[1:1]      | passed  | 0.00144 seconds |
+./spec/pages/rules/layout_spec.rb[1:1]                | passed  | 0.00572 seconds |
+./spec/pages/rules/redirect_spec.rb[1:1]              | passed  | 0.00926 seconds |
